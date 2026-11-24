@@ -1,0 +1,381 @@
+{% load static %}<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Expertz Acoustics &amp; Interiors | Soundproofing, Acoustic Panels &amp; Interiors in Malappuram</title>
+  <meta name="description" content="Premium soundproofing, acoustic panel installation, recording studio setup and modern interior works for homes, studios and commercial spaces. Vripadam, Malappuram." />
+  <meta name="theme-color" content="#0f0f11" />
+  {% if cfg.logo %}<link rel="icon" href="{{ cfg.logo.url }}" />{% endif %}
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="{% static 'main/styles.css' %}" />
+</head>
+<body>
+
+
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- ============ Top bar ============ -->
+<div class="topbar">
+  <div class="wrap topbar-in">
+    <span class="tb-left">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 1 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+      {{ cfg.top_location }}
+    </span>
+    <span class="tb-right">
+      <a href="tel:{{ cfg.phone_1_tel }}">{{ cfg.phone_1 }}</a>
+      <a href="mailto:{{ cfg.email }}">{{ cfg.email }}</a>
+    </span>
+  </div>
+</div>
+
+<!-- ============ Header ============ -->
+<header class="header" id="header">
+  <div class="wrap header-in">
+    <a href="#top" class="brand" aria-label="Expertz Acoustics &amp; Interiors">
+      <span class="slot" data-slot="Logo" data-size="520 × 150 px · SVG or transparent PNG">{% if cfg.logo %}<img src="{{ cfg.logo.url }}" alt="Expertz Acoustics &amp; Interiors" />{% else %}<strong>Expertz</strong>{% endif %}</span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#process">Process</a>
+      <a href="#work">Our Work</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+      <a class="btn btn-red nav-cta" href="#contact">Get a free quote</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ============ Hero ============ -->
+<section class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow reveal"><span class="eq" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span> Acoustics &amp; Interiors, one expert team</p>
+      <h1 class="reveal">Better sound.<br /><em>Better spaces.</em></h1>
+      <p class="hero-lead reveal">Premium soundproofing, acoustic panel installation and modern interior works for homes, recording studios, auditoriums and commercial spaces.</p>
+      <div class="hero-actions reveal">
+        <a class="btn btn-red btn-lg" href="#contact">Book a free consultation
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn btn-line btn-lg" href="#work">See our work</a>
+      </div>
+      <ul class="hero-points reveal">
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Soundproofing</li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Acoustic panels</li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Recording studios</li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Home interiors</li>
+      </ul>
+    </div>
+
+    <div class="hero-visual reveal">
+      <figure class="hv-main slot" data-slot="Hero photo" data-size="1200 × 1400 px · JPG (portrait works best)">
+        {% if cfg.hero_image %}<img src="{{ cfg.hero_image.url }}" alt="Expertz acoustics and interiors work" />{% endif %}
+      </figure>
+      <figure class="hv-small slot" data-slot="Hero photo 2" data-size="900 × 700 px · JPG">
+        {% if cfg.hero_image_2 %}<img src="{{ cfg.hero_image_2.url }}" alt="Acoustic treatment" />{% endif %}
+      </figure>
+      <div class="hv-badge">
+        <span class="hv-badge-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10v4M8 6v12M12 3v18M16 7v10M20 10v4"/></svg></span>
+        <div><strong>Free consultation</strong><span>Call back within a day</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="strip reveal">
+      <div><strong>{{ service_count }}</strong><span>specialist services</span></div>
+      <div><strong>1</strong><span>team for sound &amp; style</span></div>
+      <div><strong>4</strong><span>clear project steps</span></div>
+      <div><strong>Free</strong><span>first consultation</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Spaces marquee ============ -->
+<section class="marquee" aria-label="Spaces we work on">
+  <div class="marquee-track">
+    <span>Recording Studios</span><span>Auditoriums</span><span>Home Theatres</span><span>Living Rooms</span><span>Bedrooms</span><span>Kitchens</span><span>Offices</span><span>Commercial Spaces</span><span>Private Rooms</span>
+    <span aria-hidden="true">Recording Studios</span><span aria-hidden="true">Auditoriums</span><span aria-hidden="true">Home Theatres</span><span aria-hidden="true">Living Rooms</span><span aria-hidden="true">Bedrooms</span><span aria-hidden="true">Kitchens</span><span aria-hidden="true">Offices</span><span aria-hidden="true">Commercial Spaces</span><span aria-hidden="true">Private Rooms</span>
+  </div>
+</section>
+
+<!-- ============ About ============ -->
+<section class="section about" id="about">
+  <div class="wrap about-grid">
+    <div class="about-media reveal">
+      <figure class="am-1 slot" data-slot="About photo" data-size="1000 × 1150 px · JPG (portrait)">
+        {% if cfg.about_image_1 %}<img src="{{ cfg.about_image_1.url }}" alt="Modern living room interior" loading="lazy" />{% endif %}
+      </figure>
+      <figure class="am-2 slot" data-slot="About photo 2" data-size="900 × 900 px · JPG (square)">
+        {% if cfg.about_image_2 %}<img src="{{ cfg.about_image_2.url }}" alt="Studio room" loading="lazy" />{% endif %}
+      </figure>
+      <div class="am-tag"><span>Acoustics</span><span class="plus">+</span><span>Interiors</span></div>
+    </div>
+    <div class="about-copy reveal">
+      <p class="kicker">Who we are</p>
+      <h2>Sound that feels right.<br /><em>Spaces that look right.</em></h2>
+      <p>Expertz Acoustics and Interiors is a professional company providing acoustic solutions and interior design services for residential, commercial and studio environments. We design and install soundproofing systems, acoustic panels and customized interior works that improve both sound quality and visual appeal.</p>
+      <p>Our team focuses on precision, quality materials and modern design techniques to create comfortable, noise-controlled spaces. From audio recording studios and auditoriums to home theatres and living spaces, we deliver reliable solutions tailored to every client.</p>
+      <div class="pillars">
+        <div class="pillar">
+          <span class="pi"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M7 7a7 7 0 0 0 0 10M17 7a7 7 0 0 1 0 10M4 4a11 11 0 0 0 0 16M20 4a11 11 0 0 1 0 16"/></svg></span>
+          <h3>Acoustic solutions</h3><p>Panels and treatment that remove echo and harsh reflections.</p>
+        </div>
+        <div class="pillar">
+          <span class="pi"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M9 3v18M15 3v18"/></svg></span>
+          <h3>Soundproofing</h3><p>Systems that block noise and keep private rooms peaceful.</p>
+        </div>
+        <div class="pillar">
+          <span class="pi"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg></span>
+          <h3>Modern interiors</h3><p>Stylish, customized finishes that make a space beautiful.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Services ============ -->
+<section class="section services" id="services">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="kicker">What we do</p>
+      <h2>Our services. <em>One standard of work.</em></h2>
+      <p class="sec-sub">From a single room to a full auditorium, we handle the sound and the style under one roof.</p>
+    </div>
+
+    <div class="svc-wrap reveal">
+      <div class="svc-tabs" role="tablist" aria-label="Services" id="svcTabs"></div>
+      <div class="svc-panel" id="svcPanel" aria-live="polite">
+        <figure class="svc-img slot" data-slot="Service photo" data-size="1200 × 900 px · JPG (4:3). One per service">
+          <img id="svcImg" alt="" />
+        </figure>
+        <div class="svc-body">
+          <span class="svc-no" id="svcNo">01</span>
+          <h3 id="svcTitle"></h3>
+          <p id="svcDesc"></p>
+          <ul class="ticks" id="svcList"></ul>
+          <a class="btn btn-dark" href="#contact" id="svcCta">Enquire about this service
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Soundproofing vs Acoustic treatment ============ -->
+<section class="section compare">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="kicker">Good to know</p>
+      <h2>Soundproofing vs <em>acoustic treatment</em></h2>
+      <p class="sec-sub">They sound alike but solve different problems. Most studios and theatres need both.</p>
+    </div>
+    <div class="cmp-grid">
+      <article class="cmp-card reveal">
+        <svg class="cmp-art" viewBox="0 0 200 90" aria-hidden="true"><rect x="86" y="6" width="28" height="78" rx="3" fill="#141414"/><rect x="92" y="6" width="6" height="78" fill="#cf2f2b"/><g fill="none" stroke="#cf2f2b" stroke-width="3" stroke-linecap="round"><path d="M70 30a22 22 0 0 0 0 30"/><path d="M56 22a36 36 0 0 0 0 46" opacity=".6"/><path d="M42 14a50 50 0 0 0 0 62" opacity=".3"/></g><g fill="none" stroke="#9a948a" stroke-width="2" stroke-linecap="round" stroke-dasharray="1 6"><path d="M130 35a14 14 0 0 1 0 20"/><path d="M142 28a24 24 0 0 1 0 34"/></g></svg>
+        <h3>Soundproofing</h3>
+        <p class="cmp-goal">Keeps sound out, or in.</p>
+        <ul class="ticks">
+          <li>Blocks noise travelling between rooms and from outside</li>
+          <li>Ideal for studios, theatres and private spaces</li>
+          <li>Uses isolation systems built into walls and ceilings</li>
+        </ul>
+      </article>
+      <article class="cmp-card dark reveal">
+        <svg class="cmp-art" viewBox="0 0 200 90" aria-hidden="true"><rect x="20" y="8" width="160" height="74" rx="4" fill="none" stroke="#6a6a70" stroke-width="2"/><g fill="#cf2f2b"><rect x="28" y="16" width="26" height="22" rx="2"/><rect x="60" y="16" width="26" height="22" rx="2" fill="#d9d4cb"/><rect x="146" y="52" width="26" height="22" rx="2"/></g><path d="M72 62l30-22 28 18" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="72" cy="62" r="5" fill="#fff"/></svg>
+        <h3>Acoustic treatment</h3>
+        <p class="cmp-goal">Makes the room sound right.</p>
+        <ul class="ticks">
+          <li>Reduces echo and controls sound reflections</li>
+          <li>Improves clarity of speech and music</li>
+          <li>Uses acoustic panels on walls and ceilings</li>
+        </ul>
+      </article>
+    </div>
+    <p class="cmp-note reveal">Not sure what your space needs? <a href="#contact">Ask our team</a> and we will tell you honestly.</p>
+  </div>
+</section>
+
+<!-- ============ Process ============ -->
+<section class="section process" id="process">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="kicker">How we work</p>
+      <h2>A clear path from <em>first call to finished space</em></h2>
+    </div>
+    <ol class="steps">
+      <li class="step reveal"><span class="step-n">01</span><h3>Consultation</h3><p>Understanding your space, sound requirements and interior design needs.</p></li>
+      <li class="step reveal"><span class="step-n">02</span><h3>Design &amp; planning</h3><p>Creating customized acoustic and interior layouts.</p></li>
+      <li class="step reveal"><span class="step-n">03</span><h3>Installation</h3><p>Professional installation using high-quality materials.</p></li>
+      <li class="step reveal"><span class="step-n">04</span><h3>Final setup</h3><p>Testing and finishing for the best acoustic performance and visual appeal.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ Why us ============ -->
+<section class="section why" id="why">
+  <div class="why-bg slot" data-slot="Why-us background" data-size="1920 × 1080 px · dark JPG works best">{% if cfg.why_image %}<img src="{{ cfg.why_image.url }}" alt="" loading="lazy" />{% endif %}</div>
+  <div class="wrap why-grid">
+    <div class="why-intro reveal">
+      <p class="kicker light">The Expertz difference</p>
+      <h2>Why clients <em>choose us</em></h2>
+      <p>Reliable work, honest advice and complete support from the first sketch to the final test.</p>
+      <a class="btn btn-red" href="#contact">Talk to our team</a>
+    </div>
+    <ul class="why-list">
+      <li class="reveal"><span>01</span>Experienced acoustic and interior specialists</li>
+      <li class="reveal"><span>02</span>High-quality acoustic materials</li>
+      <li class="reveal"><span>03</span>Professional installation services</li>
+      <li class="reveal"><span>04</span>Customized designs for every space</li>
+      <li class="reveal"><span>05</span>Affordable and reliable solutions</li>
+      <li class="reveal"><span>06</span>Complete project support from design to installation</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ Work ============ -->
+<section class="section work" id="work">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="kicker">Our portfolio</p>
+      <h2>Selected <em>work</em></h2>
+      <p class="sec-sub">Completed projects and interiors currently in progress.</p>
+    </div>
+    <div class="filters reveal" role="tablist" aria-label="Filter projects">
+      <button class="chip on" data-filter="all" role="tab" aria-selected="true">All</button>
+      <button class="chip" data-filter="completed" role="tab" aria-selected="false">Previous work</button>
+      <button class="chip" data-filter="ongoing" role="tab" aria-selected="false">Ongoing works</button>
+    </div>
+    <div class="gallery" id="gallery"></div>
+    {% if cfg.video_url %}<p class="work-video reveal"><a class="btn btn-line-dark" href="{{ cfg.video_url }}" target="_blank" rel="noreferrer">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg> Watch our work</a></p>{% endif %}
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="section faq" id="faq">
+  <div class="wrap faq-grid">
+    <div class="faq-side reveal">
+      <p class="kicker">Questions</p>
+      <h2>Frequently <em>asked</em></h2>
+      <p>Cannot find your answer? Call or message us and we will help you directly.</p>
+      <a class="btn btn-dark" href="tel:{{ cfg.phone_1_tel }}">Call {{ cfg.phone_1 }}</a>
+    </div>
+    <div class="acc reveal" id="acc">
+{% for f in faqs %}      <div class="acc-item{% if forloop.first %} open{% endif %}">
+        <button class="acc-q" aria-expanded="{% if forloop.first %}true{% else %}false{% endif %}">{{ f.question }}<span class="acc-ic" aria-hidden="true"></span></button>
+        <div class="acc-a"><p>{{ f.answer|linebreaksbr }}</p></div>
+      </div>
+{% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="cta">
+  <div class="cta-bg slot" data-slot="Call-to-action background" data-size="1920 × 1080 px · JPG">{% if cfg.cta_image %}<img src="{{ cfg.cta_image.url }}" alt="" loading="lazy" />{% endif %}</div>
+  <div class="wrap cta-in reveal">
+    <h2>Ready to transform <em>your space?</em></h2>
+    <p>Tell us about your room, studio or hall. Our team will guide you from consultation to the final setup.</p>
+    <div class="cta-actions">
+      <a class="btn btn-white btn-lg" href="tel:{{ cfg.phone_1_tel }}">Call {{ cfg.phone_1 }}</a>
+      <a class="btn btn-line btn-lg" href="https://wa.me/{{ cfg.whatsapp_digits }}" target="_blank" rel="noreferrer">WhatsApp us</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Contact ============ -->
+<section class="section contact" id="contact">
+  <div class="wrap contact-grid">
+    <div class="contact-info reveal">
+      <p class="kicker">Contact</p>
+      <h2>Let's plan your <em>space</em></h2>
+      <p>For inquiries about home interiors, acoustic panel installation, soundproofing, recording studio setup and auditorium acoustic works, contact Expertz Acoustics &amp; Interiors today.</p>
+      <ul class="info">
+        <li><span class="info-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg></span>
+          <div><strong>Call us</strong><a href="tel:{{ cfg.phone_1_tel }}">{{ cfg.phone_1 }}</a>{% if cfg.phone_2 %}<a href="tel:{{ cfg.phone_2_tel }}">{{ cfg.phone_2 }}</a>{% endif %}</div></li>
+        <li><span class="info-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span>
+          <div><strong>Email us</strong><a href="mailto:{{ cfg.email }}">{{ cfg.email }}</a></div></li>
+        <li><span class="info-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 1 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+          <div><strong>Visit us</strong><span>{{ cfg.address }}</span>
+          <a class="maplink" href="https://www.google.com/maps/search/?api=1&query={{ cfg.address|urlencode }}" target="_blank" rel="noreferrer">Open in Google Maps &rarr;</a></div></li>
+      </ul>
+    </div>
+
+    <form class="form reveal" id="enquiryForm" novalidate>
+      <h3>Send an enquiry</h3>
+      <p class="form-sub">Fill in the details and your message opens in WhatsApp, ready to send to our team.</p>
+      <div class="f-row">
+        <label>Your name *<input name="name" required maxlength="100" autocomplete="name" /></label>
+        <label>Phone number *<input name="phone" type="tel" required autocomplete="tel" /></label>
+      </div>
+      <label>Service you need
+        <select name="service" id="serviceSelect"><option value="">Select a service (optional)</option></select>
+      </label>
+      <label>Tell us about your project *
+        <textarea name="message" rows="4" required placeholder="Type of space, size, what you want to achieve…"></textarea>
+      </label>
+      <button class="btn btn-red btn-lg" type="submit">Send via WhatsApp
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+      <p class="form-msg" id="formMsg" role="status"></p>
+      <p class="form-alt">Prefer email? <a id="mailAlt" href="mailto:{{ cfg.email }}">Send by email instead</a></p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ Footer ============ -->
+<footer class="footer">
+  <div class="wrap foot-grid">
+    <div>
+      <span class="slot foot-logo" data-slot="Footer logo (light)" data-size="520 × 150 px · white version">{% if cfg.logo_light %}<img src="{{ cfg.logo_light.url }}" alt="Expertz Acoustics &amp; Interiors" />{% endif %}</span>
+      <p class="foot-text">Professional acoustic solutions, soundproofing and modern interior works for homes, studios and commercial spaces.</p>
+    </div>
+    <div>
+      <h4>Explore</h4>
+      <ul><li><a href="#about">About us</a></li><li><a href="#services">Services</a></li><li><a href="#process">Process</a></li><li><a href="#work">Our work</a></li><li><a href="#faq">FAQ</a></li></ul>
+    </div>
+    <div>
+      <h4>Services</h4>
+      <ul>{% for s in services_json %}<li>{{ s.t }}</li>{% endfor %}</ul>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="tel:{{ cfg.phone_1_tel }}">{{ cfg.phone_1 }}</a></li>
+        {% if cfg.phone_2 %}<li><a href="tel:{{ cfg.phone_2_tel }}">{{ cfg.phone_2 }}</a></li>{% endif %}
+        <li><a href="mailto:{{ cfg.email }}">{{ cfg.email }}</a></li>
+        <li>{{ cfg.top_location }}</li>
+        {% if cfg.facebook_url %}<li><a href="{{ cfg.facebook_url }}" target="_blank" rel="noreferrer">Facebook</a></li>{% endif %}
+      </ul>
+    </div>
+  </div>
+  <div class="wrap copy">© <span id="yr"></span> Expertz Acoustics &amp; Interiors. All rights reserved.</div>
+</footer>
+
+<a class="wa-fab" href="https://wa.me/{{ cfg.whatsapp_digits }}" target="_blank" rel="noreferrer" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12a8 8 0 0 1-11.9 7L4 20l1.1-4A8 8 0 1 1 20 12z"/><path d="M9.2 8.6c.3 2.3 2.5 4.5 5 5.2l1.2-1.3-1.9-1-.8.7a4 4 0 0 1-1.9-1.9l.7-.8-1-1.9z" fill="currentColor" stroke="none"/></svg>
+  <span>WhatsApp</span>
+</a>
+
+<!-- Lightbox -->
+<div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-label="Project photo">
+  <button class="lb-b lb-x" aria-label="Close">&times;</button>
+  <button class="lb-b lb-p" aria-label="Previous">&lsaquo;</button>
+  <img id="lbImg" alt="" />
+  <button class="lb-b lb-n" aria-label="Next">&rsaquo;</button>
+  <p class="lb-cap" id="lbCap"></p>
+</div>
+
+{{ services_json|json_script:"services-data" }}
+{{ projects_json|json_script:"projects-data" }}
+<script>window.SITE = { wa: "{{ cfg.whatsapp_digits }}", mail: "{{ cfg.email|escapejs }}" };</script>
+<script src="{% static 'main/script.js' %}"></script>
+</body>
+</html>
